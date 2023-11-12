@@ -1,0 +1,80 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.header{
+
+    grid-area: header;
+    background-color: rgb(52, 118, 249);
+    color: white;
+    text-align: center;
+}
+.menu{
+    grid-area: menu;
+    background-color: rgb(204, 203, 202);
+   /* border: 3px solid rebeccapurple;*/
+    width: 160px;
+    display:flex ;
+    flex-direction: column;
+    justify-content:start;
+    align-items:start;
+   /* border: 1px solid red;*/
+   
+}
+.menu-contenido{
+ /*   border: 1px solid black;*/
+}
+
+.card-container{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-area: card-container;
+    justify-content:center;
+    background-color:rgb(174, 173, 171);
+    /*gap:10px;*/
+   /* border: 2px solid green;*/
+      
+}
+.foto{
+    display:flex;
+    flex-direction: column;
+     background-color: white;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+   /* border: 1px solid red;*/
+    flex-wrap: wrap;
+    margin: 10px;
+
+
+ }
+
+.foto img{
+    width: 50%;
+    /*height: 50%;*/
+ /*   border: 2px solid blue;*/
+}
+
+.boton-comprar{
+   /* border: 1px solid red;*/
+    width: 100%;
+    text-align: center;
+    background-color: rgb(52, 118, 249);
+    color:white
+}
+.footer{
+    grid-area: footer;
+    background-color: white;
+    text-align: center;
+    
+}
+
+.gird-container{
+    display:grid;
+    grid-template-areas:
+    "header header header"
+    "menu card-container card-container"
+    "footer footer footer";
+    background-color: rgb(255, 254, 253);
+    gap:10px;
+}   
